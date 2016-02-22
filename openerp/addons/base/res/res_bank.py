@@ -8,7 +8,7 @@ from openerp.exceptions import UserError
 
 def sanitize_account_number(acc_number):
     if acc_number:
-        return re.sub(r'\W+', '', acc_number).upper()
+        return re.sub(r'\W+', '', acc_number, flags=re.UNICODE).upper()
     return False
 
 class Bank(models.Model):
