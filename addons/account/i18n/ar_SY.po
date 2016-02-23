@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-11 16:34+0000\n"
-"PO-Revision-Date: 2016-02-21 15:22+0300\n"
+"PO-Revision-Date: 2016-02-23 18:23+0300\n"
 "Last-Translator: Mohammed Barsi <mbarsi@outlook.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -3298,7 +3298,7 @@ msgstr "الخصوم المتداولة"
 #. module: account
 #: model:account.account.type,name:account.data_unaffected_earnings
 msgid "Current Year Earnings"
-msgstr "Current Year Earnings"
+msgstr "ايرادات العام الحالي"
 
 #. module: account
 #: selection:account.abstract.payment,partner_type:0
@@ -3529,7 +3529,7 @@ msgstr "تعريف"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account_deprecated
 msgid "Deprecated"
-msgstr "Deprecated"
+msgstr "أرشفة الحساب"
 
 #. module: account
 #: model:account.account.type,name:account.data_account_type_depreciation
@@ -3602,7 +3602,7 @@ msgstr ""
 #: model:account.account.type,name:account.data_account_type_direct_costs
 #: model:ir.ui.view,arch_db:account.view_account_form
 msgid "Direct Costs"
-msgstr "Direct Costs"
+msgstr "تكاليف مباشرة"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -3955,7 +3955,7 @@ msgstr "سطور القيود"
 #: model:account.account.type,name:account.data_account_type_equity
 #: model:ir.ui.view,arch_db:account.view_account_form
 msgid "Equity"
-msgstr "الأسهم"
+msgstr "حقوق الملاك"
 
 #. module: account
 #: code:addons/account/models/account_move.py:706
@@ -4899,7 +4899,7 @@ msgstr "Included in Price"
 #: model:account.financial.report,name:account.account_financial_report_income0
 #: model:ir.ui.view,arch_db:account.view_account_form
 msgid "Income"
-msgstr "الدخل"
+msgstr "ايرادات"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_product_category_property_account_income_categ_id
@@ -6142,12 +6142,12 @@ msgstr "No. of digits to use for account code"
 #. module: account
 #: model:account.account.type,name:account.data_account_type_non_current_assets
 msgid "Non-current Assets"
-msgstr "Non-current Assets"
+msgstr "أصول غير متداولة"
 
 #. module: account
 #: model:account.account.type,name:account.data_account_type_non_current_liabilities
 msgid "Non-current Liabilities"
-msgstr "Non-current Liabilities"
+msgstr "التزامات غير متداولة"
 
 #. module: account
 #: selection:account.tax,type_tax_use:0
@@ -6492,7 +6492,7 @@ msgstr "Originator tax"
 #. module: account
 #: model:account.account.type,name:account.data_account_type_other_income
 msgid "Other Income"
-msgstr "Other Income"
+msgstr "إيرادات أخرى"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.invoice_form
@@ -6687,7 +6687,7 @@ msgstr "Past"
 #: selection:account.account.type,type:0
 #: model:ir.ui.view,arch_db:account.view_account_payment_search
 msgid "Payable"
-msgstr "Payable"
+msgstr "حساب دائن"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template_property_account_payable_id
@@ -7281,7 +7281,7 @@ msgstr "Reason"
 #: selection:account.account.type,type:0
 #: model:ir.ui.view,arch_db:account.view_account_payment_search
 msgid "Receivable"
-msgstr "Receivable"
+msgstr "حساب مدين"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template_property_account_receivable_id
