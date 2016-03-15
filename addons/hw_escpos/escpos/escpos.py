@@ -27,6 +27,18 @@ from constants import *
 from exceptions import *
 
 
+try:
+    import arabic_reshaper
+    from bidi.algorithm import get_display
+except ImportError:
+    import warnings
+    # faking methods "arabic_reshaper" and "get_display"
+    get_display = lambda s: s
+    class _reshaper(object):
+        def reshape(self, s):
+            return s
+    arabic_reshaper = _reshaper()
+
 
 def utfstr(stuff):
     """ converts stuff to string and does without failing if stuff is a utf8 string """
