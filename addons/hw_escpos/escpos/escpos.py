@@ -26,12 +26,19 @@ except ImportError:
 from constants import *
 from exceptions import *
 
+
+
 def utfstr(stuff):
     """ converts stuff to string and does without failing if stuff is a utf8 string """
-    if isinstance(stuff,basestring):
-        return stuff
+    if isinstance(stuff, basestring):
+        reshaped_text = arabic_reshaper.reshape(stuff)
+        text = get_display(reshaped_text)
+        return text
     else:
-        return str(stuff)
+        reshaped_text = arabic_reshaper.reshape(str(stuff))
+        text = get_display(reshaped_text)
+        return text
+
 
 class StyleStack:
     """ 
