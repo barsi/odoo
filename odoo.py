@@ -18,6 +18,13 @@ import re
 import sys
 import subprocess
 
+try:
+    from psycopg2cffi import compat
+    compat.register()
+except ImportError as e:
+    pass
+
+
 GIT_HOOKS_PRE_PUSH = """
 #!/usr/bin/env python2
 import re
