@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-09 09:18+0000\n"
-"PO-Revision-Date: 2016-06-13 00:37+0300\n"
+"PO-Revision-Date: 2016-06-13 22:59+0300\n"
 "Last-Translator: mohammed albasha <m.albasha.ma@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/odoo/odoo-9/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -1081,7 +1081,7 @@ msgstr "جاري الاقفال ..."
 #: code:addons/point_of_sale/point_of_sale.py:166 selection:pos.session,state:0
 #, python-format
 msgid "Closing Control"
-msgstr "التحكم بالإقفال"
+msgstr "اجراء الاقفال"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session_stop_at
