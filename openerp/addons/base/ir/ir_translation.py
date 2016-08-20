@@ -559,12 +559,21 @@ class ir_translation(osv.osv):
 
     @api.multi
     def write(self, vals):
+        _logger.warn(vals)
+        
         if vals.get('value'):
             vals.setdefault('state', 'translated')
         elif vals.get('src') or not vals.get('value', True):
             vals.setdefault('state', 'to_translate')
         self.check('write')
-        result = super(ir_translation, self.sudo()).write(vals)
+        result = None
+        try:
+            result = super(ir_translation, self.sudo()).write(vals)
+        except:
+            from openerp.tools import html_escape as escape
+            if 'value' in vals:
+                vals['value'] = escape(vals['value'])
+                result = super(ir_translation, self.sudo()).write(vals)
         self.check('write')
         self.clear_caches()
         return result
