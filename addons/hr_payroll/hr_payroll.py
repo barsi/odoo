@@ -696,7 +696,8 @@ class hr_payslip(osv.osv):
         date_to = self.date_to
 
         ttyme = datetime.fromtimestamp(time.mktime(time.strptime(date_from, "%Y-%m-%d")))
-        self.name = _('Salary Slip of %s for %s') % (employee_id.name, tools.ustr(ttyme.strftime('%B-%Y')))
+        name = self.env.context.get('lang', 'en_US') == 'ar_SY' and getattr(employee_id, 'name_arabic', employee_id.name) or employee_id.name
+        self.name = _('Salary Slip of %s for %s') % (name, tools.ustr(ttyme.strftime('%B-%Y')))
         self.company_id = employee_id.company_id
 
         if not self.env.context.get('contract') or not self.contract_id:
