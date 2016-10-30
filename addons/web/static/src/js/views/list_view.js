@@ -560,11 +560,12 @@ var ListView = View.extend( /** @lends instance.web.ListView# */ {
                 self.records.remove(record);
                 return;
             }
-            _.each(values, function (value, key) {
+            // _.each is broken if a field "length" is present
+            for (var key in values) {
                 if (fields[key] && fields[key].type === 'many2many')
                     record.set(key + '__display', false, {silent: true});
-                record.set(key, value, {silent: true});            
-            });
+                record.set(key, values[key], {silent: true});
+            }
             record.trigger('change', record);
 
             /* When a record is reloaded, there is a rendering lag because of the addition/suppression of 
@@ -1851,7 +1852,7 @@ var Column = Class.extend({
         }
 
         var aggregation_func = (this.sum && 'sum') || (this.avg && 'avg') ||
-                               (this.max && 'max') || (this.min && 'min') || this.group_operator;
+                               (this.max && 'max') || (this.min && 'min');
 
         if (!aggregation_func) {
             return {};
