@@ -89,43 +89,43 @@ msgstr " (محجوزة)"
 #: code:addons/stock/stock.py:3482
 #, python-format
 msgid " MTO"
-msgstr "حسب الطلب"
+msgstr " حسب الطلب"
 
 #. module: stock
 #: code:addons/stock/product.py:209 code:addons/stock/product.py:382
 #, python-format
 msgid " On Hand"
-msgstr "في اليد"
+msgstr " في اليد"
 
 #. module: stock
 #: code:addons/stock/stock.py:3619 code:addons/stock/stock.py:3912
 #, python-format
 msgid " Sequence in"
-msgstr "التسلسل الداخل"
+msgstr " التسلسل الداخل"
 
 #. module: stock
 #: code:addons/stock/stock.py:3623 code:addons/stock/stock.py:3920
 #, python-format
 msgid " Sequence internal"
-msgstr "التسلسل الداخلي"
+msgstr " التسلسل الداخلي"
 
 #. module: stock
 #: code:addons/stock/stock.py:3620 code:addons/stock/stock.py:3914
 #, python-format
 msgid " Sequence out"
-msgstr "التسلسل الخارج"
+msgstr " التسلسل الخارج"
 
 #. module: stock
 #: code:addons/stock/stock.py:3621 code:addons/stock/stock.py:3916
 #, python-format
 msgid " Sequence packing"
-msgstr "تسلسل التعبئة"
+msgstr " تسلسل التعبئة"
 
 #. module: stock
 #: code:addons/stock/stock.py:3622 code:addons/stock/stock.py:3918
 #, python-format
 msgid " Sequence picking"
-msgstr "تسلسل السحب"
+msgstr " تسلسل السحب"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_move_picking_form
@@ -1038,13 +1038,13 @@ msgstr "ارجع الامر لـ"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "Back Orders"
-msgstr "اوامر العودة"
+msgstr "مطالبات تكميلية"
 
 #. module: stock
 #: code:addons/stock/wizard/stock_backorder_confirmation.py:33
 #, python-format
 msgid "Back order <em>%s</em> <b>cancelled</b>."
-msgstr ""
+msgstr "المطالبة التكميلية <em>%s</em> <b>الغيت</b>."
 
 #. module: stock
 #: code:addons/stock/stock.py:1104
@@ -1055,24 +1055,24 @@ msgstr "<b>تم إنشاء</b> الطلب التكميلي <em>%s</em> ."
 #. module: stock
 #: model:ir.model,name:stock.model_stock_backorder_confirmation
 msgid "Backorder Confirmation"
-msgstr ""
+msgstr "تأكيد المطالبة التكميلية"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "Backorder creation"
-msgstr ""
+msgstr "انشاء مطالبة تكميلية"
 
 #. module: stock
 #: code:addons/stock/stock.py:4732
 #, python-format
 msgid "Backorder exists"
-msgstr "هل الطلبات التكميلية موجودة ؟"
+msgstr "هل المطالبات التكميلية موجودة ؟"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_backorder
 #: model:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Backorders"
-msgstr "الطلبات التكميلية"
+msgstr "المطالبات التكميلية"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_barcode
@@ -1475,13 +1475,13 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "Create Backorder"
-msgstr ""
+msgstr "اصدار مطالبة تكميلية"
 
 #. module: stock
 #: code:addons/stock/stock.py:1576
 #, python-format
 msgid "Create Backorder?"
-msgstr ""
+msgstr "اصدار مطالبة تكميلية ؟"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type_use_create_lots
@@ -3002,7 +3002,7 @@ msgstr "شهر المخزونات "
 #: model:ir.ui.menu,name:stock.menu_stock_root
 #: model:ir.ui.view,arch_db:stock.view_stock_quant_pivot
 msgid "Inventory"
-msgstr "مخزن"
+msgstr "المخــزون"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_inventory_form
@@ -3091,7 +3091,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_quants
 msgid "Inventory Valuation"
-msgstr "تقييم الجرد"
+msgstr "تقدير المخزون"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_inventory_value
@@ -3114,7 +3114,7 @@ msgstr "المفقود من الجرد"
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_filter
 #: model:ir.ui.view,arch_db:stock.view_inventory_form
 msgid "Inventory of"
-msgstr "جرد ا"
+msgstr "جرد الـ "
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_message_is_follower
@@ -3125,7 +3125,7 @@ msgstr "متابع"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_return_location
 msgid "Is a Return Location?"
-msgstr ""
+msgstr "موقع مرتجعات ؟"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_scrap_location
@@ -3295,7 +3295,7 @@ msgstr "نقولات متأخرة"
 #: model:ir.actions.act_window,name:stock.action_stock_line_date
 #: model:ir.ui.menu,name:stock.menu_report_stock_line_date
 msgid "Latest Inventories & Moves"
-msgstr "آخر المخزونات والتحركات"
+msgstr "احدث عمليات الجرد و الحركات"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_launch_pack_operations
@@ -3838,7 +3838,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "No Backorder"
-msgstr ""
+msgstr "بدون مطالبة تكميلية"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_stock_lines_date_search
@@ -4874,7 +4874,7 @@ msgstr "يجب أن تكون الكمية المتعددة أكبر من أو ت
 #: code:addons/stock/stock.py:3756
 #, python-format
 msgid "Quality Control"
-msgstr "hgjp;l td hgohwdm"
+msgstr "ضبط الجودة"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_wh_qc_stock_loc_id
@@ -5413,7 +5413,7 @@ msgstr "جدولة"
 #: model:ir.ui.view,arch_db:stock.view_move_picking_form
 #: model:ir.ui.view,arch_db:stock.view_stock_move_scrap_wizard
 msgid "Scrap"
-msgstr "البقايا"
+msgstr "اسكراب"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_stock_move_scrap_wizard
@@ -6396,7 +6396,7 @@ msgstr "في انتظار التنفيذ"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "To Receive"
-msgstr ""
+msgstr "للاستلام"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -6495,7 +6495,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_picking_id
 msgid "Transfer Reference"
-msgstr ""
+msgstr "مرجع التحويلة"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree
@@ -6511,7 +6511,7 @@ msgstr "موقع مؤقت"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Transit Locations"
-msgstr ""
+msgstr "أماكن ترانسيت"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_recompute_pack_op
@@ -6608,7 +6608,7 @@ msgstr ""
 #: code:addons/stock/stock.py:4169
 #, python-format
 msgid "Unknown Pack"
-msgstr "حزم غير معروف "
+msgstr "حزمة غير معروف "
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -6633,7 +6633,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_quant_package_form
 msgid "Unpack"
-msgstr "فضا "
+msgstr "تفريغ الحِزم"
 
 #. module: stock
 #: code:addons/stock/product.py:317
@@ -6656,7 +6656,7 @@ msgstr "عداد الرسائل الغير مقروءة"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Unreserve"
-msgstr "غير محجوز"
+msgstr "الغاء الحجز"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_resupply_from_wh
@@ -6689,7 +6689,7 @@ msgstr "عاجل"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type_use_existing_lots
 msgid "Use Existing Lots"
-msgstr ""
+msgstr "استخدام ترقيم موجود"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_make_procurment_wizard
